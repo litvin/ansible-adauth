@@ -1,0 +1,7 @@
+---
+- name: Using realmd to connect Linux to Active Directory
+  hosts: all
+  user: root
+
+  roles:
+    - adauth

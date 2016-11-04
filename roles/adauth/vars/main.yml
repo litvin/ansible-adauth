@@ -1,0 +1,7 @@
+# Vars general
+domain_full_lowercase: your_domain_lowercase
+domain_full_uppercase: your_domain_uppercase
+domain_short_uppercase: your_domain_short_uppercase
+adauth_username: user_who_have_right_on_AD
+adauth_password: password_of_the_user
+ad_sysadmin_group: the_AD_group_you_want_to_bind_to_use_sudo
