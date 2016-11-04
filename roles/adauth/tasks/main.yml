@@ -72,6 +72,6 @@
   stat: path=/etc/sudoers.d/{{ ad_sysadmin_group }}
   register: st
 
-- name: Add s_sytemes group to sudoers
+- name: Add {{ ad_sysadmin_group }} group to sudoers
   copy: content="%{{ ad_sysadmin_group }} ALL=(ALL) ALL" dest="/etc/sudoers.d/{{ ad_sysadmin_group }}" owner=root group=root mode=044
   when: st.stat.exists == false
