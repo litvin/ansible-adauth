@@ -39,7 +39,7 @@
   changed_when: false
   ignore_errors: true
 
-- name: Permit INFRA_LinuxAdmins group login
+- name: Permit {{ ad_sysadmin_group }} group login
   command: /bin/bash -c "/usr/sbin/realm permit -g {{ ad_sysadmin_group }}" 
   when: INFRA_LinuxAdmins_login|failed
 
